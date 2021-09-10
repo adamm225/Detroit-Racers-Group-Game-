@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UISystems : MonoBehaviour
 {
-    /* Put code for UI Buttons Here
-        ex. Start Game Button*/
-
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(0);
+    }
     
 }
