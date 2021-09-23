@@ -19,16 +19,18 @@ public class Cones_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(transform.position.y);
-        transform.position = transform.position + new Vector3(0, -.015f, 0);
-        transform.localScale = transform.localScale + new Vector3(.0002f, .0002f, 0);
-        if (transform.position.y <= -4)
-        {   
-            transform.position = pos;
-            transform.localScale = scale;
-            
-        } 
-        
+        if(Time.timeScale == 1f){
+            Debug.Log(transform.position.y);
+            transform.position = transform.position + new Vector3(0, -.015f, 0);
+            transform.localScale = transform.localScale + new Vector3(.0002f, .0002f, 0);
+            if (transform.position.y <= -4)
+            {   
+                transform.position = pos;
+                transform.localScale = scale;
+                
+            } 
+        }
     }
 
 }
+ 
