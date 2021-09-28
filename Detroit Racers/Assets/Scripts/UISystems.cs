@@ -18,7 +18,17 @@ public class UISystems : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    //take you to the game when you press start
+
+    public void toGame()
+    {
+        SceneManager.LoadScene(1);
+    }
    
+    public void toQuit()
+    {
+        Application.Quit();
+    }
     
 
     public IEnumerator restartgame()//does not currently restart the game
