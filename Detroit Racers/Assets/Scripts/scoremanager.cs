@@ -21,7 +21,7 @@ public class scoremanager : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // Update is called once per frameasdfas
     void Update()
     {
         if (isincreasing)
