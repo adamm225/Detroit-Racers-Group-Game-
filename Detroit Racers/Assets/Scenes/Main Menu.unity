@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 8054845}
   - component: {fileID: 8054844}
   - component: {fileID: 8054843}
-  - component: {fileID: 8054847}
   m_Layer: 5
   m_Name: Settings Menu
   m_TagString: Untagged
@@ -192,8 +191,8 @@ Canvas:
   m_GameObject: {fileID: 8054842}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -226,20 +225,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &8054847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8054842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56cbdbebd039c8347bd7f21b8c94a162, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainSong: {fileID: 879248641}
-  fader: {fileID: 1029557019}
 --- !u!1 &127909065
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 879248642}
   - component: {fileID: 879248641}
+  - component: {fileID: 879248643}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -619,7 +605,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 79e13be755a108f4aab90a36680fbd8d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -718,6 +704,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &879248643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879248640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56cbdbebd039c8347bd7f21b8c94a162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSong: {fileID: 879248641}
+  fader: {fileID: 1029557019}
 --- !u!1 &1029557017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +1003,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192979659}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

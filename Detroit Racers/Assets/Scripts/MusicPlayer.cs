@@ -10,26 +10,19 @@ public class MusicPlayer : MonoBehaviour
 
     void Start()
     {
-    
         musicVolume = PlayerPrefs.GetFloat("volume");
         Debug.Log(PlayerPrefs.GetFloat("volume"));
-
-        if (fader != null)
-        {
-            fader.value = musicVolume;
-            mainSong.volume = musicVolume;
-        }
+        fader.value = musicVolume;
+        mainSong.volume = musicVolume;
+        mainSong.Play();
     }
 
     void Update()
     {
-        //Debug.Log(fader.value);
-        //Debug.Log(mainSong.volume);
-        if (fader != null)
-        {
-            mainSong.volume = fader.value;
-            PlayerPrefs.SetFloat("volume", fader.value);
-        }
+        Debug.Log(fader.value);
+        Debug.Log(mainSong.volume);
+        mainSong.volume = fader.value;
+        PlayerPrefs.SetFloat("volume", fader.value);
     }
 
     public void updateVolume(float volume ){

@@ -21,7 +21,7 @@ public class Treemoveleft : MonoBehaviour
         
         Debug.Log(transform.position);
         transform.position += new Vector3(-0.01f, -0.004f, 0);
-       // transform.localScale += new Vector3(0.1f, 0.1f, 0);
+        transform.localScale += new Vector3(0.1f, 0.1f, 0);
         if (transform.position.y < -7)
          {
             transform.position = startPosition;
