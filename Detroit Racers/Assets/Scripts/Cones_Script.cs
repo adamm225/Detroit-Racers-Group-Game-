@@ -21,9 +21,17 @@ public class Cones_Script : MonoBehaviour
     {
         if(Time.timeScale == 1f){
             Debug.Log(transform.position.y);
-            transform.position = transform.position + new Vector3(0, -.015f, 0);
-            transform.localScale = transform.localScale + new Vector3(.0002f, .0002f, 0);
-            if (transform.position.y <= -4)
+            if (transform.position.y >= -4 )
+            {
+                transform.localScale = transform.localScale + new Vector3(.011f, .011f, 0);
+                transform.position = transform.position + new Vector3(-.01f, -.011f, 0);
+                //transform.position = transform.position + new Vector3(0, -.011f, 0);
+            }
+            else
+            {
+                transform.position = transform.position + new Vector3(0, -.30f, 0);
+            }
+            if (transform.position.y <= -10)
             {   
                 transform.position = pos;
                 transform.localScale = scale;
