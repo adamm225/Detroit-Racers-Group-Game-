@@ -11,7 +11,7 @@ public class MusicPlayer : MonoBehaviour
     void Start()
     {
         musicVolume = PlayerPrefs.GetFloat("volume");
-        Debug.Log(PlayerPrefs.GetFloat("volume"));
+        //Debug.Log(PlayerPrefs.GetFloat("volume"));
         fader.value = musicVolume;
         mainSong.volume = musicVolume;
         mainSong.Play();
@@ -19,8 +19,8 @@ public class MusicPlayer : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(fader.value);
-        Debug.Log(mainSong.volume);
+        //Debug.Log(fader.value);
+        //Debug.Log(mainSong.volume);
         mainSong.volume = fader.value;
         PlayerPrefs.SetFloat("volume", fader.value);
     }
