@@ -24,7 +24,7 @@ public class Cones_Script : MonoBehaviour
 
         Debug.Log(num); // print number
         if(Time.timeScale == 1f){
-            //Debug.Log(transform.position.y); //
+            //Debug.Log(transform.position.y);
             if (transform.position.y >= -5 )
             {
                 transform.localScale = transform.localScale + new Vector3(.011f, .011f, 0);
