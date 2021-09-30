@@ -15,6 +15,7 @@ public class UISystems : MonoBehaviour
 
     public void toMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
 

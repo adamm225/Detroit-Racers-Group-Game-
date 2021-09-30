@@ -342,7 +342,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1674711362}
         m_TargetAssemblyTypeName: UISystems, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: toMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -878,7 +878,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.6488552, y: -8.421986}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -889,7 +889,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 17.006248, y: 6.7557783}
   m_EdgeRadius: 0
 --- !u!1 &320745323
 GameObject:
@@ -2132,7 +2132,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0375427}
+  m_Offset: {x: 0.00000023841858, y: -0.31333303}
   m_SpriteTilingProperty:
     border: {x: 0.61, y: 0.51, z: 0.63, w: 0.59}
     pivot: {x: 0.5, y: 0.5}
@@ -2143,7 +2143,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.12, y: 4.665086}
+  m_Size: {x: 4.1368117, y: 2.9207296}
   m_EdgeRadius: 0
 --- !u!50 &1117352379
 Rigidbody2D:
