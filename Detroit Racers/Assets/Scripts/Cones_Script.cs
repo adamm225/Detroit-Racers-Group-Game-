@@ -28,27 +28,27 @@ public class Cones_Script : MonoBehaviour
         if (count >= 1000){
             if(Time.timeScale == 1f){
                 //Debug.Log(transform.position.y);
-                if (transform.position.y >= -5 )
+                if (transform.position.y >= -7 )
                 {
-                    transform.localScale = transform.localScale + new Vector3(.011f, .011f, 0);
+                    transform.localScale = transform.localScale + new Vector3(.04f, .04f, 0);
                     //transform.position = transform.position + new Vector3(-.01f, -.011f, 0);
                     //transform.position = transform.position + new Vector3(0, -.011f, 0);             
                     if (num == 1)
                     {
-                        transform.position = transform.position + new Vector3(-.021f, -.011f, 0);
+                        transform.position = transform.position + new Vector3(-.075f, -.033f, 0);
                     }
                     if (num == 2)
                     {
-                        transform.position = transform.position + new Vector3(0, -.011f, 0);
+                        transform.position = transform.position + new Vector3(0, -.033f, 0);
                     }
                     if (num == 3)
                     {
-                        transform.position = transform.position + new Vector3(.021f, -.011f, 0);
+                        transform.position = transform.position + new Vector3(.075f, -.033f, 0);
                     }
                 }
                 else
-                {   //This is once it gets to car (if y IS NOT >= -5)
-                    transform.position = transform.position + new Vector3(0, -.30f, 0);
+                {   //This is once it gets to car (if y IS NOT >= -7)
+                    transform.position = transform.position + new Vector3(0, -.60f, 0);
                 }
                 
                 if (transform.position.y <= -10)  //Then it goes back to where it was
