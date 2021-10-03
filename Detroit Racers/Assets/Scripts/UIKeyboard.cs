@@ -7,6 +7,7 @@ public class UIKeyboard : MonoBehaviour
     public static bool curPaus = false;
     public GameObject pauseMenu;
     public GameObject mainScreen;
+    public GameObject loseMenu;
     void Start()
     {
         
@@ -27,6 +28,9 @@ public class UIKeyboard : MonoBehaviour
         pauseMenu.SetActive(false);
         mainScreen.SetActive(true);
         Time.timeScale = 1f;
+        if(Car.lostGame == true){
+            Time.timeScale = 0f;
+        }
         curPaus = false;
     }
     void Pause(){

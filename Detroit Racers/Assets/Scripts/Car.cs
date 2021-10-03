@@ -7,10 +7,11 @@ public class Car : MonoBehaviour
 {
     //public UISystems Screencontroller; // this is so the car can use the script to restart the game
     public GameObject loseMenu;
-
+    public static bool lostGame;
     public float movementSpeed = 2;
     private void Start()
     {
+        lostGame = false;
         //Screencontroller = FindObjectOfType<UISystems>(); // this needs to be here so that the car can find the script that will restart the game
     }
 
@@ -27,9 +28,9 @@ public class Car : MonoBehaviour
         if (collision.gameObject.name == "Bananana")
         { //Debug.Log("banana");
             loseMenu.SetActive(true);
-            Time.timeScale=0f;
+            lostGame = true;
+            Time.timeScale = 0f;
             //Screencontroller.restartgame(); //this has to be called when the car collides with a banana to restart the game
-
 
         }
          
